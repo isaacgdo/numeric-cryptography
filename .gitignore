@@ -1,0 +1,20 @@
+# Linux
+
+*~
+.bak
+.fuse_hidden*
+.Trash-*
+.nfs*
+/tags
+*.swp
+/compile_commands.json
+
+# Scilab compiled macros
+
+*.bin
+names
+lib
+
+# Generated file: Scilab.iss
+/Scilab.iss
+contrib/external_modules.iss
