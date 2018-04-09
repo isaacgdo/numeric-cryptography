@@ -40,7 +40,7 @@ Por fim, analisar qual dos métodos iterativos utilizados foi mais eficiente.
 
 ## Utilização dos métodos
 
-####Criptografia de Imagens
+#### Criptografia de Imagens
 
 No Scilab, instale a biblioteca _scicv_ (Scilab Computer Vision Module) com o comando
 `atomsInstall("scicv");` , ou, se preferir, instale diretamente pela interface do 
@@ -53,7 +53,7 @@ e execute-o para que a função possa ser usada.
 
 No console do Scilab, execute os seguintes comandos:
 
-``` 
+```c
 // inicializa os recursos que serão utilizados da biblioteca scicv
 scicv_Init();
 
@@ -65,7 +65,7 @@ Imagem utilizada (tamanho (190x190)px ):
 ![secretImg](img/secret.png)
 
 
-```
+```c
 //trabalharemos com a imagem em preto e branco
 //variável recebendo a matriz da imagem em escala cinza
 ig = cvtColor(i, CV_BGR2GRAY);
@@ -91,7 +91,7 @@ Imagens que representam as matrizes L e U geradas
 
 ![Lower](img/L.png) &nbsp; &nbsp; ![Upper](img/U.png)
 
-```
+```c
 //salvando as imagens das matrizes L e U
 imwrite(fullfile('caminho/img/', 'L.png'), L);
 imwrite(fullfile('caminho/img/', 'U.png'), U);
@@ -113,7 +113,7 @@ pode obter mais detalhes da utilização dessa função [aqui](https://help.scil
 
 
 
-####Descriptografia de mensagens
+#### Descriptografia de mensagens
 
 No Scilab, abra os arquivos dos métodos de _Resolução Retroativa, Eliminação de Gauss, Jacobi 
 e Gauss-Seidel_ no SciNotes. Execute os arquivos para que as funções fiquem disponíveis para 
@@ -123,7 +123,7 @@ Em seguida, abra o arquivo `pre-informations.sci` e execute-o para gerar a matri
 e o vetor de termos independentes fornecidos.
 
 Em seguida, execute os seguintes comandos para obter a solução do sistema:
-```
+```c
 //obtendo o vetor solução pelo método de Gauss
 xGauss = gauss(C,b)
 
@@ -153,8 +153,7 @@ quadrada a um produto de duas matrizes, L (Matriz triangular inferior (*Lower*))
 
 O teorema desse método diz que uma matriz **A** possui decomposição **LU** se e 
 somente se os determinantes dos menores principais dessa matriz forem diferentes 
-de 0 (![det](http://www.sciweavers.org/upload/Tex2Img_1523134933/render.png) ), para 
-k = 1,2, ... , n-1.
+de 0.
 
 
 - **Método de Resolução Retroativa**
