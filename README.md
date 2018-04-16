@@ -75,7 +75,7 @@ ig = cvtColor(i, CV_BGR2GRAY);
 igF = double(ig(:,:));
 
 // para garantir que a matriz da imagem não fique com duas linhas idênticas e 
-portanto, não possua decomposição LU, adicione um ruído a imagem 
+// portanto, não possua decomposição LU, adicione um ruído a imagem 
 igF = igF + rand(dimensionX, dimensionY);
 
 //exibindo a imagem
@@ -125,13 +125,13 @@ e o vetor de termos independentes fornecidos.
 Em seguida, execute os seguintes comandos para obter a solução do sistema:
 ```
 //obtendo o vetor solução pelo método de Gauss
-xGauss = gauss(C,b)
+x_gauss = gauss(C,b)
 
 //obtendo o vetor solução e o número de iterações pelo método de Jacobi
-[xJacobi, iterJ] = jacobi(C, b, zeros(12,1), 10^-3, 300)
+[x_jacobi, iter_j] = jacobi(C, b, zeros(12,1), 10^-3, 300)
 
 //obtendo o vetor solução e o número de iterações pelo método de Gauss-Seidel
-[xGaussSeidel, iterGS] = gaussSeidel(C, b, zeros(12,1), 10^-3, 300)
+[x_gauss_seidel, iter_gs] = gaussSeidel(C, b, zeros(12,1), 10^-3, 300)
 ```
 Com isso, obtém-se os seguintes resultados:
 
