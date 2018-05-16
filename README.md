@@ -190,7 +190,7 @@ anteriores de cada iteração do método até que a solução convirja.
 
 - **Método de Gauss-Seidel**
 
-Similar ao método de _Jacobi_, o método de _Gauss-Seidel_ também isolar as incógnitas de um 
+Similar ao método de _Jacobi_, o método de _Gauss-Seidel_ também isola as incógnitas de um 
 sistema linear não-triangular para achar as soluções deste. A única diferença é que, neste 
 método, o valor utilizado para calcular os elementos e encontrar as variáveis, utiliza o 
 valor mais atual das soluções.
